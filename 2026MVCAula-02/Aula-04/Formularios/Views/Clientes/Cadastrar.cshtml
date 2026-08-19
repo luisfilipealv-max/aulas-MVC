@@ -1,0 +1,78 @@
+@model aulasMVC.Cliente
+
+
+
+<div class="conteiner">
+    
+    <h1 class="text-center mt-3 fw-bold">Cadastro de Cliente</h1>
+
+
+    <form action="Cadastrar" method="post">
+    <div class="row">
+        <div class="col-12 col-md-3 mt-5">
+            <label asp-for="Id">Código</label>
+            <input type="number" class="form-control" placeholder="Código do Cliente" asp-for="Id"/>
+        </div>
+        <div class="col-12 col-md-3 mt-5">
+            <label asp-for="Nome">Nome do Cliente</label>
+            <input type="text" class="form-control" placeholder="Nome Completo ..." asp-for="Nome"/>
+        </div>
+        <div class="col-12 col-md mt-5">
+            <label asp-for="Endereco">Endereço Completo</label>
+            <input type="text" class="form-control" placeholder="Digite seu Endereço ..." asp-for="Endereco"/>
+        </div>
+        <div class="col-12 col-md-3 mt-5">
+            <label asp-for="Bairro"></label>
+            <input type="text" class="form-control" placeholder="Digite seu Bairro ..." asp-for="Bairro"/>
+        </div>
+        <div class="col-12 col-md-3 mt-5">
+            <label asp-for="Cidade">Cidade</label>
+            <input type="text" class="form-control" placeholder="Digite sua cidade ..." asp-for="Cidade"/>
+        </div>
+        <div class="col-12 col-md-3 col-md-3 mt-5">
+            <label asp-for="UF">Unidade Ferederal</label>
+            <input type="text" class="form-control" placeholder="Digite seu Estado ..." asp-for="UF"/>
+        </div>
+        <div class="col-12 col-md-3 mt-5">
+            <label asp-for="CEP">CEP válido</label>
+            <input type="text" class="form-control" placeholder="Digite seu CEP ..." asp-for="CEP"/>
+        </div>
+        <div class="col-12 col-md-3 mt-5">
+            <label asp-for="CPF">CPF válido</label>
+            <input type="text" class="form-control" placeholder="Digite seu CPF ..." asp-for="CPF"/>
+        </div>
+       <div class="row justify-content-center">
+
+            <div class="col-12 col-md-3 mt-5">
+                <label asp-for="Email">Email válido</label>
+                <input type="text" class="form-control" placeholder="Digite seu Email ..." asp-for="Email"/>
+            </div>
+
+            <div class="col-12 col-md-3 mt-5">
+                <label asp-for="Celular">Número de celular válido</label>
+                <input type="text" class="form-control" placeholder="Digite seu número de celular ..." asp-for="Celular"/>
+            </div>
+
+            <div class="col-12 col-md-3 mt-5">
+                <label asp-for="DataNascimento">Data de nascimento</label>
+                <input type="Date" class="form-control" placeholder="Digite sua Data de nasc ..." asp-for="DataNascimento"/>
+            </div>
+         <div class="col-12  mt-5 d-flex justify-content-center gap-2">
+            <label asp-for="Observacao">Observação</label>
+            <input type="text" class="form-control" placeholder="Deixe sua observação ..." asp-for="Observacao"/>
+        </div>
+                <div class="row mt-5">
+            <div class="col text-center">
+                <input type="reset" value="Limpar" class="w-50 btn btn-outline-secondary"/>
+            </div>
+            <div class="col text-center">
+                <input type="submit" value="Enviar" class="w-50 btn btn-primary" />
+            </div>
+        </div>
+
+        
+        
+
+    </div>
+
+    </form>
